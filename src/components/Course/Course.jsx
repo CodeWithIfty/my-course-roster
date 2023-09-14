@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import {BsCurrencyDollar, BsBook} from 'react-icons/bs'
 
-const Course = ({course}) => {
+const Course = ({course, showSelectedCourse}) => {
  const {slug, course_name, course_img, price, credit} = course;
   return (
     <div className="card w-72 md:w-80 bg-base-100 shadow-xl mx-auto">
@@ -20,7 +20,7 @@ const Course = ({course}) => {
         </div>
     </div>
     <div className="card-actions justify-end">
-      <button className="p-2 bg-[#2F80ED] w-full rounded-lg text-white text-lg font-semibold">Select</button>
+      <button className="p-2 bg-[#2F80ED] w-full rounded-lg text-white text-lg font-semibold" onClick={() =>showSelectedCourse(course)}>Select</button>
     </div>
   </div>
 </div>
