@@ -1,0 +1,65 @@
+[
+    {
+        "course_name": "Introduction to Programming",
+        "course_desc": "Learn the fundamentals of programming and computer science.",
+        "price": 299,
+        "credit": 3,
+        "course_img": "https://i.ibb.co/Tg7bPHD/Rectangle-2.png"
+    },
+    {
+        "course_name": "Web Development Bootcamp",
+        "course_desc": "Become a full-stack web developer in just 12 weeks.",
+        "price": 899,
+        "credit": 6,
+        "course_img": "https://i.ibb.co/2jSX51z/Rectangle-2-1.png"
+    },
+    {
+        "course_name": "Data Science Essentials",
+        "course_desc": "Master the key concepts and tools of data science.",
+        "price": 499,
+        "credit": 4,
+        "course_img": "https://i.ibb.co/DRGLvwT/Rectangle-2-2.png"
+    },
+    {
+        "course_name": "Digital Marketing Strategy",
+        "course_desc": "Learn to create effective digital marketing campaigns.",
+        "price": 349,
+        "credit": 3,
+        "course_img": "https://i.ibb.co/0cSbzDZ/Rectangle-3.png"
+    },
+    {
+        "course_name": "Graphic Design Fundamentals",
+        "course_desc": "Develop your skills in graphic design and visual communication.",
+        "price": 249,
+        "credit": 2,
+        "course_img": "https://i.ibb.co/Fkvf5t4/Rectangle-2-3.png"
+    },
+    {
+        "course_name": "MBA Finance and Investment",
+        "course_desc": "A comprehensive program for finance professionals.",
+        "price": 1299,
+        "credit": 12,
+        "course_img": "https://i.ibb.co/X7CjpP3/Rectangle-2-4.png"
+    },
+    {
+        "course_name": "Artificial Intelligence and Machine Learning",
+        "course_desc": "Explore the exciting world of AI and machine learning.",
+        "price": 599,
+        "credit": 5,
+        "course_img": "https://i.ibb.co/ZzxxvWW/Rectangle-3-1.png"
+    },
+    {
+        "course_name": "Photography Masterclass",
+        "course_desc": "Capture stunning photos with this photography course.",
+        "price": 199,
+        "credit": 2,
+        "course_img": "https://i.ibb.co/9vD5pc0/Rectangle-2-5.png"
+    },
+    {
+        "course_name": "Business Ethics and Leadership",
+        "course_desc": "Develop ethical leadership skills for the modern business world.",
+        "price": 349,
+        "credit": 3,
+        "course_img": "https://i.ibb.co/Qj2VvRT/Rectangle-2-6.png"
+    }
+]
