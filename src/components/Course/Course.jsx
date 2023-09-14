@@ -4,7 +4,7 @@ import {BsCurrencyDollar, BsBook} from 'react-icons/bs'
 const Course = ({course}) => {
  const {slug, course_name, course_img, price, credit} = course;
   return (
-    <div className="card w-80 bg-base-100 shadow-xl">
+    <div className="card w-72 md:w-80 bg-base-100 shadow-xl mx-auto">
   <figure className='mt-3'><img src={course_img} alt={slug}/></figure>
   <div className="card-body">
     <h2 className="card-title text-lg">{course_name}</h2>
