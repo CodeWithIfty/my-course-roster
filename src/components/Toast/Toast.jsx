@@ -3,7 +3,7 @@ const Toast = ({alert}) => {
   return (
     alert && <div className="toast">
                         <div className={`alert text-white alert-info ${alert.color}`}>
-                            <span><strong>{alert.message}</strong> {alert.type}</span>
+                            <span>{alert.message}</span>
                         </div>
                     </div>
   )

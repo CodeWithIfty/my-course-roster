@@ -11,10 +11,9 @@ const MainSection = () => {
     const [alert, setAlert] = useState(null);
     const [remainingCredit, setRemainingCredit] = useState(20)
 
-    const showAlert = (message, type, color) => {
+    const showAlert = (message, color) => {
       setAlert({
         message: message,
-        type: type,
         color: color
       })
       setTimeout(() =>{
@@ -30,19 +29,7 @@ const MainSection = () => {
 
       let cost;
       if(selectedCourse.includes(course_name)){
-
-            setSelectedCourse(selectedCourse.filter(selectedCourse => selectedCourse !== course_name))
-
-            const newTotalCredit = totalCredit - credit;
-            setTotalCredit(newTotalCredit)
-
-            const newTotalPrice = totalPrice - price;
-            setTotalPrice(newTotalPrice)
-
-            const newRemainingCredit = remainingCredit + credit;
-            setRemainingCredit(newRemainingCredit);
-
-            showAlert(course_name, 'has been removed.', 'bg-[tomato]')
+            showAlert('You have already selected this Course.', 'bg-[tomato]')
         }else{
             setSelectedCourse([...selectedCourse, course_name]);
 
@@ -56,7 +43,7 @@ const MainSection = () => {
             const newRemainingCredit = remainingCredit - credit;
             setRemainingCredit(newRemainingCredit);
 
-            showAlert(course_name, 'has been added.', 'bg-[green]')
+            showAlert("Course Added", 'bg-[green]')
         }
 
         if(cost > 20 ){
@@ -67,7 +54,7 @@ const MainSection = () => {
             setTotalPrice(totalPrice)
 
             setRemainingCredit(remainingCredit)
-            showAlert('',"Your credit limit is 20. You can't add this course.", 'bg-[red]')
+            showAlert("Your credit limit is 20. You can't add this course.", 'bg-[red]')
         }
 
       } 

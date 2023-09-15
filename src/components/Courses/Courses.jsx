@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Course from "../Course/Course";
 import PropType from 'prop-types'
 
-const Courses = ({showSelectedCourse, selectedCourse}) => {
+const Courses = ({showSelectedCourse}) => {
 const [courses, setCourses] = useState([]);
 useEffect(() =>{
     fetch('courses.json')
@@ -17,7 +17,6 @@ useEffect(() =>{
             key={course.slug}
             course={course}
             showSelectedCourse= {showSelectedCourse}
-            selectedCourse={selectedCourse}
             />
         )
       }
@@ -27,7 +26,6 @@ useEffect(() =>{
 
 Courses.propTypes ={
     showSelectedCourse: PropType.func,
-    selectedCourse: PropType.array
 }
 
 export default Courses;
