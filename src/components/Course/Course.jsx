@@ -1,8 +1,17 @@
 import PropTypes from 'prop-types'
 import {BsCurrencyDollar, BsBook} from 'react-icons/bs'
 
-const Course = ({course, showSelectedCourse}) => {
+const Course = ({course, showSelectedCourse, selectedCourse}) => {
  const {slug, course_name, course_img, price, credit} = course;
+
+ const handleSelectBtnTxt = () => {
+  if(selectedCourse.includes(course_name)){
+    return <p>Remove</p>
+  }
+    return <p>Select</p>
+}
+
+
   return (
     <div className="card w-72 md:w-80 bg-base-100 shadow-xl mx-auto">
   <figure className='mt-3'><img src={course_img} alt={slug}/></figure>
@@ -20,13 +29,18 @@ const Course = ({course, showSelectedCourse}) => {
         </div>
     </div>
     <div className="card-actions justify-end">
-      <button className="p-2 bg-[#2F80ED] w-full rounded-lg text-white text-lg font-semibold" onClick={() =>showSelectedCourse(course)}>Select</button>
+      <button className="p-2 bg-[#2F80ED] w-full rounded-lg text-white text-lg font-semibold" onClick={() =>showSelectedCourse(course)}>
+        {
+          handleSelectBtnTxt()
+        }
+        </button>
     </div>
   </div>
 </div>
   )
 }
 Course.propTypes ={
-    course: PropTypes.object
+    course: PropTypes.object,
+    showSelectedCourse: PropTypes.func
   }
 export default Course
