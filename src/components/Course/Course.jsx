@@ -41,6 +41,7 @@ const Course = ({course, showSelectedCourse, selectedCourse}) => {
 }
 Course.propTypes ={
     course: PropTypes.object,
-    showSelectedCourse: PropTypes.func
+    showSelectedCourse: PropTypes.func,
+    selectedCourse: PropTypes.array
   }
 export default Course

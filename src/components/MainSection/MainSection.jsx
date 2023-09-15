@@ -20,7 +20,7 @@ const MainSection = () => {
 
       setTimeout(() =>{
         setAlert(null)
-      },1500)
+      },2500)
     } 
 
     const showSelectedCourse = course => {

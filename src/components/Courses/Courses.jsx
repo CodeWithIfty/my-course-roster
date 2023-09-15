@@ -26,7 +26,8 @@ useEffect(() =>{
 }
 
 Courses.propTypes ={
-    showSelectedCourse: PropType.func
+    showSelectedCourse: PropType.func,
+    selectedCourse: PropType.array
 }
 
 export default Courses;
