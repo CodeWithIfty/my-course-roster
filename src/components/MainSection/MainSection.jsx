@@ -42,7 +42,7 @@ const MainSection = () => {
             const newRemainingCredit = remainingCredit + credit;
             setRemainingCredit(newRemainingCredit);
 
-            showAlert(course_name, 'has been removed.', 'bg-[red]')
+            showAlert(course_name, 'has been removed.', 'bg-[tomato]')
         }else{
             setSelectedCourse([...selectedCourse, course_name]);
 
