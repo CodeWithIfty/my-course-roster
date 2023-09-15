@@ -1,8 +1,21 @@
-# React + Vite
+**Top 3 Feature of this "Course Registration" App**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2. Functionality
+All the course card are showing on the app/website those are come dynamically from Course.json file.
+It has some functionality like If I click on the select button on the card it will add the course on side bar which is Selected Course Section.
+Also the select button text will be change when you select a course the course button text will replace with "Remove" text.
+Also will appear an toast when you select or removed and course.
 
-Currently, two official plugins are available:
+3. Credit
+The user will have 20 credit to select the course. User can select up to 20 credit course. 
+If try two select more than 20 credit It will show and toast.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+4. Responsiveness 
+This app are fully responsive on all the Devices (Desktop, Tablet and Mobile).
+
+
+====================================================
+
+
+
+
