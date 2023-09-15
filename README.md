@@ -3,8 +3,7 @@
 1. Functionality:-
 All the course card are showing on the app/website those are come dynamically from Course.json file.
 It has some functionality like If I click on the select button on the card it will add the course on side bar which is Selected Course Section.
-Also the select button text will be change when you select a course the course button text will replace with "Remove" text.
-Also will appear an toast when you select or removed and course.
+Also If try to add the same course to the sidebar it will show an toast with "You have already added this course" text.
 
 2. Credit:-
 The user will have 20 credit to select the course. User can select up to 20 credit course. 
