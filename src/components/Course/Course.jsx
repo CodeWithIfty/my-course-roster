@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import {BsCurrencyDollar, BsBook} from 'react-icons/bs'
 
 const Course = ({course, showSelectedCourse, selectedCourse}) => {
- const {slug, course_name, course_img, price, credit} = course;
+ const {slug, course_name, course_desc, course_img, price, credit} = course;
 
  const handleSelectBtnTxt = () => {
   if(selectedCourse.includes(course_name)){
@@ -17,7 +17,7 @@ const Course = ({course, showSelectedCourse, selectedCourse}) => {
   <figure className='mt-3'><img src={course_img} alt={slug}/></figure>
   <div className="card-body">
     <h2 className="card-title text-lg">{course_name}</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <p>{course_desc}</p>
     <div className='flex justify-between items-center py-2'>
         <div className='flex items-center gap-2 text-lg '>
         <BsCurrencyDollar/>
