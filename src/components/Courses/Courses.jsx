@@ -11,7 +11,7 @@ useEffect(() =>{
 }, [])
 
   return (
-    <div className="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-3 xl:w-[80%] md:w-[60%] lg:w-[70%]">
+    <div className="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-4 xl:w-[80%] md:w-[60%] lg:w-[70%]">
       {
         courses.map(course => <Course 
             key={course.slug}
